@@ -18,5 +18,55 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding-right: 8%;
-    font-size: 5.0rem;
+    font-size: 4.0rem;
   }
+
+.App{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.buttonsContainer{
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin:5%;
+}
+.numberButtonContainer{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.specialButtonContainer{
+    display:flex;
+}
+button{
+    padding:50px;
+    border-radius:75%;
+    border:none;
+    margin: 5px;
+    font-weight: bold;
+    font-size:.75rem;
+    color:white;
+    box-shadow: -3px 3px black;
+}
+.numberButton button{  
+    background-color:#113c78;
+   
+}
+.operatorButton button{
+    background-color:#3db5e5;
+}
+.specialButton button{
+    background-color:#2061b0;
+}
+.zero{
+    width: 200px;
+    border-radius:100px;
+}
+.logo-container{
+    text-align: left;
+    margin-left:5%;
+    margin-top:5%;
+}
