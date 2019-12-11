@@ -9,11 +9,11 @@ import { numbers } from '../../../data'
 import {numbers} from "../../../data";
 import NumberButton from "./NumberButton";
 import Special from "../SpecialButtons/Specials";
-const Numbers = ({value}) => {
+const Numbers = ({setValue}) => {
   const [numberState] = useState({numbers})
   // STEP 2 - add the imported data to state
   
-  console.log(numberState.numbers);
+  // console.log(numberState.numbers);
   return (
     <div className="numberButtonContainer">
       <Special/>
@@ -22,7 +22,7 @@ const Numbers = ({value}) => {
        it any props needed by the child component*/
 
        numberState.numbers.map((item, index) => (
-        <NumberButton key = {index} number={item}/>
+        <NumberButton key = {index} number={item} setValue={setValue}/>
        )) 
       
        }

@@ -19,7 +19,8 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
   const [value, setValue] = useState(0);
   
-  console.log(Operators)
+
+  console.log(value);
   return (
     <div className="container">
       <Logo />
@@ -27,7 +28,7 @@ function App() {
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         <Display value={value}/>
         <div className="buttonsContainer">
-          <Numbers value={value}/>
+          <Numbers setValue={setValue}/>
           <Operators/>
         </div>
        

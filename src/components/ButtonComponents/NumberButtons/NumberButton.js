@@ -1,14 +1,14 @@
 import React from "react";
 
 
-const NumberButton = ({number}) => {
+const NumberButton = ({number,setValue}) => {
 
   if (number < 1){
     return (
       <>
         {/* Display a button element rendering the data being passed down from the parent container on props */}
         <div className="numberButton">
-          <button class="zero">{number}</button>   
+          <button className="zero" onClick={() => setValue(number)}>{number}</button>   
           </div>
       </>
     );
@@ -17,7 +17,7 @@ const NumberButton = ({number}) => {
       <>
         {/* Display a button element rendering the data being passed down from the parent container on props */}
         <div className="numberButton">
-          <button>{number}</button>   
+          <button onClick={() => setValue(number)}>{number}</button>   
           </div>
       </>
     );
